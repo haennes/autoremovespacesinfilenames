@@ -9,4 +9,9 @@ def rename_all_child_files(path : str):
             rename_all_child_files(path+"/"+i)
         os.rename(path+"/"+i , path + "/"+i.replace(" ","_"))
 
-rename_all_child_files("/home/hannes/Documents")
+while True:
+    path_to_serach = input("Enter the path to the parent folder")
+    if os.path.isdir(path_to_serach)
+        break
+
+rename_all_child_files(path_to_serach)
